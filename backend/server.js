@@ -15,8 +15,14 @@ function setupServer() {
     })
 
     app.get("/api", async (req,res)=>{
-        const data = await db.select("*").from("workers");
-        res.send(data);
+        const workerdata = await db
+            .select(
+                'group_code.*',
+                'workers.name'
+            )
+            .from('group_code')
+            .join('workers',{'workers.code_id':'group_code.id'})
+        res.send(workerdata);
     })
 
     return app;
