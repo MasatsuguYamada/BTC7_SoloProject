@@ -41,8 +41,8 @@ export function Searchbar() {
             <select id="select" onChange={() => {
                 getSelectName();
             }}>
-                <option key="disabledSelected">選択してください</option>
-                {nameArray.map((name, index) => (<option key={index + 1}>{name}</option>))}
+                <option key="disabledSelected" >選択してください</option>
+                {nameArray.map((name, index) => (<option key={index}>{name}</option>))}
             </select>
 
             <button id="searchButton" onClick={()=>{
