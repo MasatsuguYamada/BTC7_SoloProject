@@ -8,4 +8,4 @@
 | ![image](./img/top.png) | ![image](./img/search.png) |![image](./img/map.png)|
 
 ## 操作デモ
-![gif](./movie/demo.mov)
+[demo.mov](movie/demo.mov)
