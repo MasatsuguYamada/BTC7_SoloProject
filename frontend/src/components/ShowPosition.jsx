@@ -11,8 +11,6 @@ export function ShowPosition(){
 
     useEffect(()=>{
         getPosition();
-
-        //
     },[]);
 
 
