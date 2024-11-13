@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import {ShowPosition} from "./ShowPosition.jsx";
+import '../style/Searchbar.css'
+
 
 export function Searchbar() {
     const [nameArray, setNameArray] = useState([]);
@@ -48,9 +50,11 @@ export function Searchbar() {
             <button id="searchButton" onClick={()=>{
                 postId();
                 setIsButton(true);
-                // getPosition();
-                console.log(searchName);
             }}>検索実行</button>
+            <button id="returnButton" onClick={()=>{
+                setIsButton(false);
+            }}>戻る</button>
+
             {isButton ? <ShowPosition />:console.log("isButton false")}
 
         </>

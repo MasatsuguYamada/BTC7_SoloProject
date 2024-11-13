@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@yamada-ui/button": "^1.0.49",
+    "@yamada-ui/react": "^1.6.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
